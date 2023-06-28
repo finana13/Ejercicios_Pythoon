@@ -1,0 +1,19 @@
+""" 8. De acuerdo con la tabla realice un programa que convierta una unidad a otra unidad,
+por  ejemplo  si el usuario ingresa 1 MB el  sistema  deberá  arrojar  el siguiente
+resultado
+1MB son:
+8388608 Bits
+1048576 Bytes
+1024 Kb
+0.000976563 GB"""
+
+numero = int(input("Ingrese un valor (MB) para realizar su conversion: "))
+bits = num*8388608
+bytes = num*1048576
+kb = num*1024
+gb = num*0.000976563
+
+print(num,"MB = ",bits,"Bits")
+print(num,"MB = ",bytes,"Bytes")
+print(num,"MB = ",kb,"Kb")
+print(num,"MB = ",gb,"GB")

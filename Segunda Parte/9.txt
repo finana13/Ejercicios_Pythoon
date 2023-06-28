@@ -1,0 +1,7 @@
+"""9. Empleo de estructura selectiva para detectar si un número es entero o real"""
+"""numero = input("Ingrese un número: ")
+
+if "." in numero:
+    print("El número es real.")
+else:
+    print("El número es entero.")"""

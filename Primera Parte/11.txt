@@ -1,0 +1,7 @@
+"""11. Crea un programa que lea un valor  y  muestre en pantalla la longitud de ese valor por
+ejemplo si el usuario ingresa "Diego Fernando"  deberá decir  que ha ingresado  14
+caracteres"""
+
+val = input("ingrese el valor para calcular su longitud: ")
+longitud = len(val)
+print("la longitud es: ",longitud)

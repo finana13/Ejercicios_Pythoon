@@ -1,0 +1,32 @@
+"""16. Se desea realizar una estadística de los pesos de los alumnos de un colegio de
+acuerdo a la siguiente tabla:
+Alumnos de menos de 40 kg.
+Alumnos entre 40 y 50 kg.
+Alumnos de más de 50 kg y menos de 60 kg.
+Alumnos de más o igual a 60 kg."""
+"""
+menos_40 = 0
+entre_40_50 = 0
+entre_50_60 = 0
+mas_igual_60 = 0
+
+cantidad_alumnos = int(input("Ingrese la cantidad de alumnos: "))
+
+for _ in range(cantidad_alumnos):
+    peso = float(input("Ingrese el peso del alumno: "))
+
+    if peso < 40:
+        menos_40 += 1
+    elif 40 <= peso <= 50:
+        entre_40_50 += 1
+    elif 50 < peso < 60:
+        entre_50_60 += 1
+    else:
+        mas_igual_60 += 1
+
+print("Estadísticas de pesos de los alumnos:")
+print("Alumnos de menos de 40 kg:", menos_40)
+print("Alumnos entre 40 y 50 kg:", entre_40_50)
+print("Alumnos de más de 50 kg y menos de 60 kg:", entre_50_60)
+print("Alumnos de más o igual a 60 kg:", mas_igual_60)
+"""

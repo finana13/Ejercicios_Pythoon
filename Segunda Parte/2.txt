@@ -1,0 +1,10 @@
+"""2. Crea un programa  que diga si un numero ingresado por teclado es par o impar"""
+
+try:
+  num = int(input("Ingrese un numero: "))
+  if num % 2 == 0:
+    print("Numero par")
+  else:
+    print("Numero impar")
+except:
+  print("Ingrese un numero entero")

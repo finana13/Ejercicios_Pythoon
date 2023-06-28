@@ -1,0 +1,10 @@
+""" 7. Calcule el  valor  del  IVA 19% y el descuento de un producto ingresado por teclado"""
+
+produ = input("Ingrese el nombre del producto: ")
+val = int(input("Ingrese el valor del producto: "))
+
+iva = 19/100
+val_iva = valor*iva
+val_final_produ = val+val_iva
+
+print("El valor a pagar del producto teniendo en cuenta el iva es de: ",val_final_produ)

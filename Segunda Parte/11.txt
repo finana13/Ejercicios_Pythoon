@@ -1,0 +1,5 @@
+"""11. Crea un Algoritmo que nos calcule el área de un triángulo conociendo sus lados"""
+"""b = int(input("Ingrese una base: "))
+h = int(input("Ingrese una altura: "))
+res = (b*h)/2
+print("El area del triangulo es: ",res)"""

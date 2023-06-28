@@ -1,0 +1,9 @@
+"""5. Suma de 3 numeros ingresados por  teclado  y calcular el promedio"""
+
+a = int(input("ingrese valor 1: "))
+b = int(input("ingrese valor 2: "))
+c = int(input("ingrese valor 3: "))
+
+promedio = (a+b+c)/3
+
+print("El promedio es: ",promedio)

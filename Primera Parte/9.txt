@@ -1,0 +1,7 @@
+"""9. Elabora un programa que le pida al usuario una base y un exponente, posteriormente
+mostrar el  resultado  al usuario"""
+
+base = int(input("Ingrese una base: "))
+altura = int(input("Ingrese una altura: "))
+resultado = base*altura
+print("El resultado es: ",resultado)

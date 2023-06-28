@@ -1,0 +1,6 @@
+"""13. Realiza un programa que  me calcule el  área  de un triangulo"""
+
+base = int(input("Ingrese una base: "))
+altura = int(input("Ingrese una altura: "))
+resultado = (base*altura)/2
+print("El area del triangulo es: ",resultado)

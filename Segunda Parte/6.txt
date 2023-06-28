@@ -1,0 +1,46 @@
+"""6. Se desea obtener la nómina semanal —salario neto— de los empleados de una
+empresa cuyo trabajo se paga por horas y del modo siguiente:
+las horas inferiores o iguales a 35 horas (normales) se pagan a una tarifa
+determinada que se debe introducir por teclado al igual que el número de horas y el
+nombre del trabajador,
+las horas superiores a 35 se pagarán como extras a un promedio de 1,5 horas
+normales,
+los impuestos a deducir a los trabajadores varían en función de su sueldo mensual:
+sueldo <= 2.000, libre de impuestos,
+las siguientes 220 euros al 20 por 100,
+el resto, al 30 por 100."""
+
+
+tar_normal = float(input("Ingrese la tarifa por hora normal: "))
+h_trabajadas = int(input("Ingrese el número de horas trabajadas: "))
+nom_trabajador = input("Ingrese el nombre del trabajador: ")
+sueldo_men = float(input("Ingrese el sueldo mensual del trabajador: "))
+
+if h_trabajadas <= 35:
+    salario_normal = h_trabajadas * tar_normal
+    salario_extra = 0
+else:
+    h_normales = 35
+    h_extras = h_trabajadas - h_normales
+    sal_normal = h_normales * tar_normal
+    sal_extra = h_extras * (tar_normal * 1.5)
+
+salario_bruto = sal_normal + sal_extra
+
+if sueldo_men <= 2000:
+    impuestos = 0
+elif sueldo_men <= 2220:
+    imp = (sueldo_bruto - 2000) * 0.2
+else:
+    imp = (sueldo_bruto - 2220) * 0.3 + 44
+
+sal_neto = salario_bruto - impuestos
+
+print("\nNómina Semanal")
+print("Nombre del trabajador:", nom_trabajador)
+print("Horas trabajadas:", h_trabajadas)
+print("Salario normal:", sal_normal)
+print("Salario extra:", sal_extra)
+print("Salario bruto:", salario_bruto)
+print("Impuestos:", imp)
+print("Salario neto:", sal_neto)

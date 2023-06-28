@@ -1,0 +1,40 @@
+"""12. Realizar  un programa para saber que día tiene pico y placa su vehículo"""
+
+"""##Pico y placa
+nu = "si"
+
+while nu == "si":
+  print("Dias de pico y placa:\n")
+  print("Lunes: 3 y 4")
+  print("Lunes: 5 y 6")
+  print("Lunes: 7 y 8")
+  print("Lunes: 9 y 0")
+  print("Lunes: 1 y 2\n")
+
+  placa = input("Ingrese por favor su placa: ")
+
+  try:
+    pos = int(placa[5])
+    ve = "Carro"
+  except:
+    pos = int(placa[4])
+    ve = "Moto"
+
+  if pos==1 or pos==2:
+      print("Su ",ve," con placa ",placa," tiene pico y placa los dias viernes")
+  elif pos == 3 or pos == 4:
+      print("Su ",ve," con placa ",placa," tiene pico y placa los dias lunes")
+  elif pos == 5 or pos == 6:
+      print("Su ",ve," con placa ",placa," tiene pico y placa los dias martes")
+  elif pos == 7 or pos == 8:
+      print("Su ",ve," con placa ",placa," tiene pico y placa los dias miercoles")
+  else:
+      print("Su ",ve," con placa ",placa," tiene pico y placa los dias jueves")
+      
+  nu=input("Desea consulatar nuevamente una placa? ")
+  if nu == "si":
+    nu = "si"
+    print("\n")
+  else:
+    print("\n")
+    print("Gracias por utilizar nuestro programa...Feliz dia!!")"""

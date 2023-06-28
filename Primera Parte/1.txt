@@ -1,0 +1,15 @@
+""" 1. Cree las variables y asigne los siguientes valores y Muestre la información en consola
+de los datos ingresados
+nombre = “Andres”
+edad = 18
+identificacion = “1061555333”
+mayor_de_edad = edad >= 18"""
+
+nom = "Sandra"
+edad = int(46)
+ide = int(25273072)
+
+if edad >= 18:
+  print(nom,"es mayor de edad")
+else:
+  print(nom,"NO es mayor de edad")

@@ -1,0 +1,22 @@
+""" 6. Elabore una minicalculadora que al ingresar 2 numeros me calcule el resultado de la
+suma, resta, producto, division, exponenciaxion, modulo de la division"""
+
+a = int(input("ingrese valor 1: "))
+b = int(input("ingrese valor 2: "))
+operacion = input("Ingrese que operacion desea realizar: ")
+
+if operacion == "suma" or operacion == "Suma":
+  suma = a+b
+  print("La suma de ",a," + ",b," = ",suma)
+elif operacion == "resta" or operacion == "Resta":
+  resta = a-b
+  print("La resta de ",a," - ",b," = ",resta)
+elif operacion == "division" or operacion == "Division" or operacion == "div":
+  if a>0:
+    div = a/b
+    print("La division de ",a," / ",b," = ",div)
+  else:
+    print("La division no se puede realizar")
+else:
+  mult = a+b
+  print("La multipliccaion de ",a," * ",b," = ",mult)

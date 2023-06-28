@@ -1,0 +1,18 @@
+def binario_a_decimal(binario):
+    posi = 0
+    deci = 0
+    
+   
+    binario = binario[::-1]
+    for digito in binario:
+       
+        multi = 2**posi
+        deci += int(digito) * multi
+        posi += 1
+    return decimal
+
+
+
+binario = input("Ingresa un número binario: ")
+deci = binario_a_decimal(binario)
+print("El numero ",binario," en decimal es ",deci)

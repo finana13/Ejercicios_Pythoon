@@ -1,0 +1,18 @@
+"""7. Elabora un programa para una discoteca que necesita controlar el acceso a las
+personas la  cual pida el nombre a una persona y su edad, en caso  que  sea  mayor
+de  18  lo deje ingresar, si es  menor  de edad debe  mostrar un  mensaje diciendole
+que no puede ingresar y si  tiene 18 años  debera  preguntar por su  identificación"""
+
+nombre = input("Ingrese su nombre: ")
+edad = int(input("Ingrese su edad: "))
+
+if edad > 18:
+    print("Bienvenido,Puede ingresar a la discoteca.")
+elif edad < 18:
+    print("Lo siento, No puedes ingresar a la discoteca.")
+else:
+    identificacion = input("Puedes mostrarme tu identificación? (Sí/No) ")
+    if identificacion.lower() == "sí":
+        print("Bienvenido, Puede ingresar a la discoteca.")
+    else:
+        print("Lo siento,No puedes ingresar a la discoteca.")

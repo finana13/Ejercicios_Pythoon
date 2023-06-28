@@ -1,0 +1,26 @@
+"""8. Tatiana tiene  ganas  de salir  con su amiga Paola a tomar un cafe  pero ella  sabe
+que si va al  centro comercial Campanario deberá pagar transporte ida y regreso  y los
+cafes de ambas, pero  si va a Terraplaza se ahorra el transporte,  pero  tambien debe
+tener encuenta que  el  cafe  en Terraplaza es 2 veces mas costoso que en
+campanario el cual  tiene un costo de 4000 y tambien cuenta con  20000 el  tranporte
+seria en bus por un valor  de 1600  el  programa le debe decir a Tatiana cual seria la
+mejor opcion que debe tomar"""
+
+costo_cafe_campanario = 4000
+costo_cafe_terraplaza = 2 * costo_cafe_campanario
+costo_transporte_bus = 1600
+dinero_tatiana = 20000
+
+costo_total_campanario = costo_cafe_campanario * 2 + costo_transporte_bus
+costo_total_terraplaza = costo_cafe_terraplaza * 2
+
+if costo_total_campanario <= dinero_tatiana and costo_total_terraplaza <= dinero_tatiana:
+    print("Tatiana puede elegir entre ir a Campanario o Terraplaza.")
+    print("El costo total en Campanario sería:", costo_total_campanario)
+    print("El costo total en Terraplaza sería:", costo_total_terraplaza)
+elif costo_total_campanario <= dinero_tatiana:
+    print("Tatiana debe ir a Campanario.")
+    print("El costo total en Campanario sería:", costo_total_campanario)
+else:
+    print("Tatiana debe ir a Terraplaza.")
+    print("El costo total en Terraplaza sería:", costo_total_terraplaza)

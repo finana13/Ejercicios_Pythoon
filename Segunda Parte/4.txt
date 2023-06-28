@@ -1,0 +1,15 @@
+"""4. Elabora un programa que me muestre en pantalla de forma ordenada de menor a
+mayor dos números ingresados por teclado, por ejemplo si ingreso 5 Y 4 deberá
+mostrar, "los números ingresados  son  5 y 4 y organizados  son  4, 5"""
+
+x = int(input("Ingrese valor A: "))
+y = int(input("Ingrese valor B: "))
+print("A:",x," , B:",y)
+
+if x < y:
+  print(print("A:",x," , B:",y))
+else:
+  c = y
+  y = x
+  x = c
+  print("A:",x," , B:",y)

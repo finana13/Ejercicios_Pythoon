@@ -1,0 +1,12 @@
+"""1. Elabora  un programa que  me muestre en pantalla cual de los dos números
+ingresados por  teclado es mayor"""
+
+x = int(input("Ingrese valor A: "))
+y = int(input("Ingrese valor B: "))
+
+if x > y:
+  print(x," es mayor que ",y)
+elif y > x:
+  print(y," es mayor que ",x)
+else:
+  print("Los dos valores son iguales")
