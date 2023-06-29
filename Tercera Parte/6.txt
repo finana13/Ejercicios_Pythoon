@@ -1,0 +1,21 @@
+"""Escribir una aplicación que reciba un número entero k e imprima su descomposición
+en factores primos.
+def descomposicion_factores_primos(numero):
+    factor = 2
+    factores_primos = []
+
+    while factor <= numero:
+        if numero % factor == 0:
+            factores_primos.append(factor)
+            numero = numero / factor
+        else:
+            factor += 1
+
+    return factores_primos
+
+
+numero_ingresado = int(input("Ingrese un número entero: "))
+factores_primos = descomposicion_factores_primos(numero_ingresado)
+
+print(f"La descomposición en factores primos de {numero_ingresado} es:")
+print(" x ".join(str(factor) for factor in factores_primos))"""

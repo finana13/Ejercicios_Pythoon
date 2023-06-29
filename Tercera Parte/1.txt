@@ -1,0 +1,12 @@
+"""Realiza un programa que muestre los numeros pares desde un numero
+predeterminado hasta otro numero predeterminado
+
+ 
+inicio = 20
+fin = 50
+
+for i in range(inicio, fin+1):
+	
+    if i % 2 == 0:
+        
+        print(i)"""

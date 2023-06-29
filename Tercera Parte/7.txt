@@ -1,0 +1,16 @@
+"""Escribir un programa que contenga una contraseña inventada, que le pregunte al
+usuario la contraseña, y no le permita continuar hasta que la haya ingresado
+correctamente.
+def verificar_contrasena():
+    contrasena_correcta = "contrasena123"
+
+    while True:
+        contrasena_ingresada = input("Ingrese la contraseña: ")
+        if contrasena_ingresada == contrasena_correcta:
+            print("¡Contraseña correcta!")
+            break
+        else:
+            print("Contraseña incorrecta. Intente nuevamente.")
+
+
+verificar_contrasena()"""

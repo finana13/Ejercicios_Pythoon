@@ -1,0 +1,23 @@
+"""Modificar el programa anterior para que después de cada intento agregue una pausa
+cada vez mayor, utilizando la función sleep del módulo time.
+
+import time
+
+def verificar_contrasena(intentos):
+    contrasena_correcta = "contrasena123"
+
+    for i in range(intentos):
+        contrasena_ingresada = input("Ingrese la contraseña: ")
+        if contrasena_ingresada == contrasena_correcta:
+            print("¡Contraseña correcta!")
+            return
+
+        print("Contraseña incorrecta. Intente nuevamente.")
+        tiempo_pausa = i + 1
+        time.sleep(tiempo_pausa)
+
+    print("Se ha excedido la cantidad de intentos. Acceso denegado.")
+
+
+intentos_permitidos = 3
+verificar_contrasena(intentos_permitidos)

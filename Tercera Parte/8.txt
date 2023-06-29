@@ -1,0 +1,19 @@
+"""Modificar el programa anterior para que solamente permita una cantidad fija de
+intentos.
+
+def verificar_contrasena(intentos):
+    contrasena_correcta = "contrasena123"
+
+    for i in range(intentos):
+        contrasena_ingresada = input("Ingrese la contraseña: ")
+        if contrasena_ingresada == contrasena_correcta:
+            print("¡Contraseña correcta!")
+            return
+
+        print("Contraseña incorrecta. Intente nuevamente.")
+
+    print("Se ha excedido la cantidad de intentos. Acceso denegado.")
+
+
+intentos_permitidos = 3
+verificar_contrasena(intentos_permitidos)"""
